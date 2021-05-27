@@ -2,6 +2,8 @@ namespace SpriteKind {
     export const star = SpriteKind.create()
     export const hi = SpriteKind.create()
     export const Okur = SpriteKind.create()
+    export const kieran = SpriteKind.create()
+    export const Yeah = SpriteKind.create()
 }
 function nextLevelGroup () {
     scene.setBackgroundImage(img`
@@ -278,61 +280,61 @@ scene.onHitTile(SpriteKind.Player, 7, function (sprite) {
         Kieran.setPosition(2, 60)
         controller.moveSprite(Kieran, 100, 100)
         Kieran_star = sprites.create(img`
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            `, SpriteKind.Player)
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            `, SpriteKind.Okur)
         Kieran_star.setPosition(100, 67)
         KSTAR = sprites.create(img`
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            `, SpriteKind.Player)
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            `, SpriteKind.kieran)
         KSTAR.setPosition(30, 59)
         mySprite4 = sprites.create(img`
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            . . . . . 1 1 1 1 1 1 1 . . . . 
-            `, SpriteKind.Player)
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            . . . . . f f f f f f f . . . . 
+            `, SpriteKind.Yeah)
         mySprite4.setPosition(61, 91)
     }
 })
@@ -357,6 +359,10 @@ function star2 () {
         `, SpriteKind.star)
     mySprite4.setPosition(118, 106)
 }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Yeah, function (sprite, otherSprite) {
+    info.changeScoreBy(1)
+    mySprite4.destroy()
+})
 function startbeginning () {
     scene.setTileMap(levels[currentLevel])
     scene.setTile(2, img`
@@ -733,6 +739,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.star, function (sprite, otherSpr
     info.changeScoreBy(1)
     mySprite4.destroy()
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Okur, function (sprite, otherSprite) {
+    info.changeScoreBy(1)
+    Kieran_star.destroy()
+})
 scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
     scene.setBackgroundColor(15)
     scene.setBackgroundImage(img`
@@ -857,6 +867,10 @@ scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
         ................................................................................................................................................................
         ................................................................................................................................................................
         `)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.kieran, function (sprite, otherSprite) {
+    info.changeScoreBy(1)
+    KSTAR.destroy()
 })
 scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
     currentLevel += 1
