@@ -823,7 +823,7 @@ scene.onHitTile(SpriteKind.Player, 3, function (sprite) {
             . . . . . . c c c . . . . . . . 
             . . . . . . c c c . . . . . . . 
             `, SpriteKind.Player)
-        mySprite3.setPosition(126, 56)
+        mySprite3.setPosition(129, 72)
         mySprite5 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -842,7 +842,7 @@ scene.onHitTile(SpriteKind.Player, 3, function (sprite) {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.hi)
-        mySprite5.setPosition(83, 17)
+        mySprite5.setPosition(123, 16)
         mySprite4 = sprites.create(img`
             . . . . . . . . c . . . . . . . 
             . . . . . . . c c c . . . . . . 
@@ -861,7 +861,7 @@ scene.onHitTile(SpriteKind.Player, 3, function (sprite) {
             c c c c c c c c c c . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.bruh)
-        mySprite4.setPosition(146, 102)
+        mySprite4.setPosition(147, 102)
     }
 })
 scene.onHitTile(SpriteKind.Player, 15, function (sprite) {
