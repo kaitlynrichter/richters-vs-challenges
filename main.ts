@@ -933,7 +933,7 @@ scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Player)
-        mySprite3.setPosition(118, 36)
+        mySprite3.setPosition(122, 44)
         mySprite5 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -952,7 +952,26 @@ scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.hi)
-        mySprite5.setPosition(81, 17)
+        mySprite5.setPosition(83, 17)
+        mySprite4 = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . 5 5 7 7 7 5 5 . . . . . 
+            . . . 7 7 5 7 7 7 5 7 7 . . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . . 7 7 5 7 7 7 5 7 7 . . . . 
+            . . . . 5 5 7 7 7 5 5 . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.hi)
+        mySprite4.setPosition(160, 76)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.kieran, function (sprite, otherSprite) {
