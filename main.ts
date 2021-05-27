@@ -933,7 +933,7 @@ scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Player)
-        mySprite3.setPosition(118, 45)
+        mySprite3.setPosition(118, 36)
         mySprite5 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -952,7 +952,7 @@ scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.hi)
-        mySprite5.setPosition(80, 18)
+        mySprite5.setPosition(81, 17)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.kieran, function (sprite, otherSprite) {
