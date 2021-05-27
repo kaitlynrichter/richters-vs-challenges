@@ -769,6 +769,7 @@ scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
     if (currentLevel == levels.length) {
         game.over(true)
     } else {
+        scene.setTileMap(levels[currentLevel])
         scene.setBackgroundColor(15)
         scene.setBackgroundImage(img`
             ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -893,6 +894,65 @@ scene.onHitTile(SpriteKind.Player, 1, function (sprite) {
             ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
             `)
         mySprite.destroy()
+        mySprite6 = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            1 1 1 1 1 1 1 1 . . . . . . . . 
+            1 1 1 1 1 1 1 1 . . . . . . . . 
+            . . 1 1 1 1 . . . . . . . . . . 
+            . . 1 1 1 1 . . . . . . . . . . 
+            . . . . e e 1 1 1 1 1 1 1 1 . . 
+            . . . . 1 1 1 1 1 1 1 1 1 1 1 1 
+            . . . . 1 1 1 1 1 1 1 1 1 1 . . 
+            . . . . 1 1 1 1 1 1 1 1 1 1 . . 
+            . . . . 1 1 1 1 1 1 1 1 1 1 . . 
+            . . . . 1 . 1 1 . 1 1 . 1 1 . . 
+            . . . . 1 . 1 1 . 1 1 . 1 1 . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.Player)
+        mySprite6.setPosition(93, 63)
+        controller.moveSprite(mySprite6, 100, 100)
+        scene.cameraFollowSprite(mySprite)
+        mySprite3 = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . 5 5 7 7 7 5 5 . . . . . 
+            . . . 7 7 5 7 7 7 5 7 7 . . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . . 7 7 5 7 7 7 5 7 7 . . . . 
+            . . . . 5 5 7 7 7 5 5 . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.Player)
+        mySprite3.setPosition(89, 37)
+        mySprite5 = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . 5 5 7 7 7 5 5 . . . . . 
+            . . . 7 7 5 7 7 7 5 7 7 . . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . 7 7 7 5 7 7 7 5 7 7 7 . . . 
+            . . . 7 7 5 7 7 7 5 7 7 . . . . 
+            . . . . 5 5 7 7 7 5 5 . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.hi)
+        mySprite5.setPosition(72, 92)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.kieran, function (sprite, otherSprite) {
@@ -969,6 +1029,7 @@ scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
     }
 })
 let mySprite2: Sprite = null
+let mySprite6: Sprite = null
 let mySprite3: Sprite = null
 let mySprite5: Sprite = null
 let mySprite4: Sprite = null
